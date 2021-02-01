@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Portfólio</title>
+
+	<style>
+		.font_white{
+			font-family:Verdana, Gevana, sans-serif;
+			color:white;
+		}
+		.font_black{
+			font-family:Verdana, Gevana, sans-serif;
+			color:black;
+		}
+		.interative-img{
+			width:64px;
+			height:64px;
+		}
+		.interative-img:hover,.interative-img:focus{
+			background-color:#D9D9D9;
+			box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  			transform: translateY(-0.25em);
+		}
+		.box{
+			display:flex;
+			text-align:center;
+		}
+		.left{
+			flex:1;
+			text-align:center;
+		}
+		.right{
+			flex:1;
+			text-align:center;
+		}
+		.link{
+			text-decoration:none;
+			opacity:0.5;
+		}
+		.link:hover{
+			opacity:1.0;
+		}
+	</style>
+</head>
+
+<body>
+	<table width="100%" height="60" border="0" cellspacing="5" cellpadding="5" bgcolor="#000000">
+		<tr>
+			<td align="center">
+				<table width="100%" border="0" align="center" cellpadding="1" cellspacing="3">
+					<td width="35%">
+						<h3 class="font_white">Renê Michel Santana Padilha</h3>
+					</td>
+					<td width="10%">
+						<a class="link" href="#intro"><h3 class="font_white">Introdução</h3></a>
+					</td>
+					<td width="10%">
+						<a class="link" href="#projects"><h3 class="font_white">Projetos</h3></a>
+					</td>
+					<td width="10%">
+						<a class="link" href="#formation"><h3 class="font_white">Educação</h3></a>
+					</td>
+					<td width="10%">
+						<a class="link" href="#skills"><h3 class="font_white">Habilidades</h3></a>
+					</td>
+				</table>
+			</td>
+	</table>
+	<table  width="100%" align="center">
+		<tr>
+			<td align="center">
+				<img src="icons/back.png" width="100%" height="500">
+			</td>
+		</tr>
+	</table>
+	<table id="intro"  width="100%" align="center" bgcolor="#D9D9D9">
+		<tr>
+			<td align="center">
+				<h1 class="font_black"><img src="icons/programmer.png" width="64" height="64">Introdução</h1>
+				<table width="100%" height="300" align="center" bgcolor="#FFFFFF">
+					<tr>
+						<td align="center" width="50%">
+							<h2 clas="font_black">Sobre mim:</h2>
+							<h3 class="font_black">Desde 2018, quando comecei a cursar Engenharia de Software na UFC, estudo e desenvolvo aplicações para pôr o que aprendi em prática e obter experiência a partir disso sempre priorizando otimização, segurança e eficiência de forma mais rápida para cada sistema desenvolvido assim como seguindo os padrões de codificação de cada linguagem. Desde 2019 trabalho com frontend tendo desenvolvidos projetos utilizando javascript com html, css, bootstrap.</h3>
+							<h2 clas="font_black">Links:</h2>
+							<a href="https://github.com/Rene-Michel99">
+								<img class="interative-img" src="icons/github.png" width="64" height="64">
+							</a>
+							<a href="https://www.linkedin.com/in/ren%C3%AA-michel-santana-padilha-a69394200/">
+								<img  class="interative-img" src="icons/linkedin.png">
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<table id="projects"  width="100%" height="500" align="center" bgcolor="#D9D9D9">
+		<tr>
+			<td align="center">
+				<h1 class="font_black"><img src="icons/project.png" width="64" height="64">Projetos Desenvolvidos</h1></font>
+				<table width="100%" align="center" bgcolor="#FFFFFF">
+					<tr>
+						<td align="center" width="33%" bgcolor="#32BF84">
+							<img src="icons/android.png" width="64" height="64">
+							<p class="font_white">App de randomização para a plataforma android desenvolvido usando a linguagem java com o android studio.</p>
+						</td>
+						<td align="center" width="33%" bgcolor="#FFC513">
+							<img src="icons/javascript.png" width="64" height="64">
+							<p class="font_white">Sistema web para gerenciamento de estoque utilizando no frontend javascript, html e css.</p>
+						</td>
+						<td align="center" width="33%" bgcolor="#3E82FC">
+							<img src="icons/php.png" width="64" height="64">
+							<p class="font_white">Sistema web para gerenciamento de horas complementares para alunos, com back-end desenvolvido em PHP inserido no Heroku e MongoDB atlas como o banco de dados, e o frontend desenvolvido utlizando javascript + react native. Na comunicação do frontend com o backend foi utilizado o ajax do PHP.</p>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" width="33%" bgcolor="#FFC513">
+							<img src="icons/javascript.png" width="64" height="64">
+							<p class="font_white">Sistema web de player de música utilizando php para buscar os arquivos na memória, javascript para controlar as funcionalidades na página, ajax para se comunicar com o código php e html e css para o design da página.</p>
+						</td>
+						<td align="center" width="33%" bgcolor="#3B719F">
+							<img src="icons/python.png" width="64" height="64">
+							<p class="font_white">Assistente virtual desenvolvida em python utilizando algoritmos de deep learning treinados do 0, possuindo uma rede neural CNN para reconhecimento de gestos e outra para conversação.</p>
+						</td>
+						<td align="center" width="33%" bgcolor="#9900FA">
+							<img src="icons/csharp.png" width="64" height="64">
+							<p class="font_white">Sistema para criação de notas desenvolvido em C# e utilizando como banco de dados o MySql.</p>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" width="33%" bgcolor="#3B719F">
+							<img src="icons/python.png" width="64" height="64">
+							<p class="font_white">Jogo de batalha naval utilizando algoritmos de machine learning treinados do zero a partir de um dataset criado, utlizando 2 modelos para comparção de desempenho entre ambos um deles sendo utilizado o algoritmo KNN e o outro Naive Bayes.</p>
+						</td>
+						<td align="center" width="33%" bgcolor="#3B719F">
+							<img src="icons/python.png" width="64" height="64">
+							<p class="font_white">Algoritmo DPLL desenvolvido em python para solução de fórmulas lógicas no padrão FNC.</p>
+						</td>
+						<td align="center" width="33%" bgcolor="#9900FA">
+							<img src="icons/csharp.png" width="64" height="64">
+							<p class="font_white">Simples interface para visualização da previsão do clima desenvolvido em C# e utilizando web scrapper para coletar os dados.</p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<table id="formation"  width="100%" height="150" align="center" bgcolor="#D9D9D9">
+		<tr>
+			<td align="center">
+				<h1 class="font_black"><img src="icons/hat.png" width="64" height="64">Educação</h1>
+				<table width="100%" align="center" bgcolor="#FFFFFF">
+					<tr>
+						<td align="center">
+							<div class="container">
+								<ul>
+									<li>
+										<h3 class="font_black">2018 - Em curso.<br>Cursando 6 semestre de engenharia de software na UFC.</h3>
+									</li>
+									<li>
+										<h3 class="font_black">Finalizado em 2017.<br>Ensino Médio completo.</h3>	
+									</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<table id="skills" width="100%" height="150" align="center" bgcolor="#D9D9D9">
+		<tr>
+			<td align="center">
+				<h1 class="font_black"><img src="icons/skill.png" width="64" height="64">Habilidades</h1>
+				<table width="100%" align="center" bgcolor="#FFFFFF">
+					<tr>
+						<td>
+							<div class="container">
+								<ul>
+									<li>
+										<h3 class="font_black">PHP</h3>
+									</li>
+									<li>
+										<h3 class="font_black">Javascript</h3>
+									</li>
+									<li>
+										<h3 class="font_black">HTML & CSS</h3>
+									</li>
+								</ul>
+							</div>
+						</td>
+						<td>
+							<div class="container">
+								<ul>
+									<li>
+										<h3 class="font_black">Python</h3>
+									</li>
+									<li>
+										<h3 class="font_black">C#</h3>
+									</li>
+									<li>
+										<h3 class="font_black">Java</h3>
+									</li>
+								</ul>
+							</div>
+						</td>
+						<td>
+							<div class="container">
+								<ul>
+									<li>
+										<h3 class="font_black">MySql</h3>
+									</li>
+									<li>
+										<h3 class="font_black">MongoDB</h3>
+									</li>
+									<li>
+										<h3 class="font_black">Git e Github</h3>
+									</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+<foot>
+	<table width="100%" height="150" bgcolor="#000000">
+		<tr align="center">
+			<td align="center">
+				<h5 class="font_white">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></h5>
+			</td>
+		</tr>
+	</table>
+</foot>
+</html>
