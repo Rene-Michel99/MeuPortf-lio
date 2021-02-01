@@ -14,10 +14,14 @@
 			color:black;
 		}
 		.interative-img{
+			background-color:white;
+			border-radius:50px;
+			border:2px solid #3B719F;
 			width:64px;
 			height:64px;
 		}
 		.interative-img:hover,.interative-img:focus{
+			border:2px solid white;
 			background-color:#D9D9D9;
 			box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   			transform: translateY(-0.25em);
@@ -40,41 +44,65 @@
 		}
 		.link:hover{
 			opacity:1.0;
+			background-color:white;
+			box-shadow:10px 10px #FFFFFF;
+		}
+		.parallax{
+		  /* The image used */
+		  background-image: url("icons/back.png");
+
+		  /* Set a specific height */
+		  height:550px;
+		  text-align:center;
+		  /* Create the parallax scrolling effect */
+		  background-attachment: fixed;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+		.perf-img{
+			border:2px solid white;
+			border-radius:150px;
+		}
+		.no-margin{
+			margin:0px;
 		}
 	</style>
 </head>
 
-<body>
-	<table width="100%" height="60" border="0" cellspacing="5" cellpadding="5" bgcolor="#000000">
+<body class="no-margin">
+	<table width="100%" height="100" border="0" cellspacing="5" cellpadding="5" bgcolor="#000000">
 		<tr>
 			<td align="center">
 				<table width="100%" border="0" align="center" cellpadding="1" cellspacing="3">
-					<td width="35%">
-						<h3 class="font_white">Renê Michel Santana Padilha</h3>
+					<td>
+						<a class="link" href="#intro"><h4 class="font_white">Introdução</h4></a>
 					</td>
-					<td width="10%">
-						<a class="link" href="#intro"><h3 class="font_white">Introdução</h3></a>
+					<td>
+						<a class="link" href="#projects"><h4 class="font_white">Projetos</h4></a>
 					</td>
-					<td width="10%">
-						<a class="link" href="#projects"><h3 class="font_white">Projetos</h3></a>
+					<td>
+						<a class="link" href="#formation"><h4 class="font_white">Educação</h4></a>
 					</td>
-					<td width="10%">
-						<a class="link" href="#formation"><h3 class="font_white">Educação</h3></a>
-					</td>
-					<td width="10%">
-						<a class="link" href="#skills"><h3 class="font_white">Habilidades</h3></a>
+					<td>
+						<a class="link" href="#skills"><h4 class="font_white">Habilidades</h4></a>
 					</td>
 				</table>
 			</td>
 	</table>
-	<table  width="100%" align="center">
-		<tr>
-			<td align="center">
-				<img src="icons/back.png" width="100%" height="500">
-			</td>
-		</tr>
-	</table>
-	<table id="intro"  width="100%" align="center" bgcolor="#D9D9D9">
+	<div class="parallax">
+		<img class="perf-img" src="https://avatars.githubusercontent.com/u/55860702?s=400&u=6cff84555fc97f7b2e7fead8d542df8d892b9205&v=4" width="300" height="300">
+		<h1 class="font_white">Renê Michel Santana Padilha</h1>
+		<h2 class="font_white">Contato:</h2>
+		<a href="https://github.com/Rene-Michel99">
+			<img class="interative-img" src="icons/github.png" width="64" height="64">
+		</a>
+		<a href="https://www.linkedin.com/in/ren%C3%AA-michel-santana-padilha-a69394200/">
+			<img  class="interative-img" src="icons/linkedin.png">
+		</a>
+	</div>
+	
+	<table id="intro"  width="100%" height="500" align="center" bgcolor="#D9D9D9">
 		<tr>
 			<td align="center">
 				<h1 class="font_black"><img src="icons/programmer.png" width="64" height="64">Introdução</h1>
@@ -82,14 +110,7 @@
 					<tr>
 						<td align="center" width="50%">
 							<h2 clas="font_black">Sobre mim:</h2>
-							<h3 class="font_black">Desde 2018, quando comecei a cursar Engenharia de Software na UFC, estudo e desenvolvo aplicações para pôr o que aprendi em prática e obter experiência a partir disso sempre priorizando otimização, segurança e eficiência de forma mais rápida para cada sistema desenvolvido assim como seguindo os padrões de codificação de cada linguagem. Desde 2019 trabalho com frontend tendo desenvolvidos projetos utilizando javascript com html, css, bootstrap.</h3>
-							<h2 clas="font_black">Links:</h2>
-							<a href="https://github.com/Rene-Michel99">
-								<img class="interative-img" src="icons/github.png" width="64" height="64">
-							</a>
-							<a href="https://www.linkedin.com/in/ren%C3%AA-michel-santana-padilha-a69394200/">
-								<img  class="interative-img" src="icons/linkedin.png">
-							</a>
+							<h3 class="font_black">Desde 2018, quando comecei a cursar Engenharia de Software na UFC, estudo e desenvolvo aplicações para pôr o que aprendi em prática e obter experiência a partir disso sempre priorizando otimização, segurança e eficiência de forma mais rápida para cada sistema desenvolvido assim como seguindo os padrões de codificação de cada linguagem. Desde 2020 trabalho com frontend tendo desenvolvidos projetos utilizando javascript e suas funcionalidade extras como ajax, html, css e bootstrap.</h3>
 						</td>
 					</tr>
 				</table>
@@ -220,6 +241,9 @@
 									<li>
 										<h3 class="font_black">Git e Github</h3>
 									</li>
+									<li>
+										<h3 class="font_black">Linux</h3>
+									</li>
 								</ul>
 							</div>
 						</td>
@@ -230,10 +254,10 @@
 	</table>
 </body>
 <foot>
-	<table width="100%" height="150" bgcolor="#000000">
+	<table width="100%" align="center" height="150" bgcolor="#000000">
 		<tr align="center">
 			<td align="center">
-				<h5 class="font_white">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></h5>
+				<h5 class="font_white"><img src="https://www.flaticon.com/svg/vstatic/svg/1841/1841783.svg?token=exp=1612216572~hmac=9a15318b8c6f1179f696f29e3fd50803" width="64" height="64">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></h5>
 			</td>
 		</tr>
 	</table>
