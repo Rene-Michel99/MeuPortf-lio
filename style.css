@@ -61,6 +61,12 @@
 .csharp-color{
 	background-color:#9900FA;
 }
+.node-color{
+	background-color:#3a3b3b;
+}
+.rounded{
+	border-radius:50%;
+}
 
 .link{
 	text-decoration:none;
