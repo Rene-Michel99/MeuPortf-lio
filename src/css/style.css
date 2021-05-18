@@ -105,7 +105,7 @@ body{
 #welcome-text{
     font-family: monospace;
     font-size: 6rem;
-    color: white;
+    color: rgb(0, 255, 0);
 }
 #welcome-section{
     display: flex;
@@ -337,7 +337,7 @@ body{
 		align-items: center;
 		text-align: center;
 		margin-top:50px;
-		height:150vh;
+		height:200vh;
 		background-image: url("../icons/back.png");
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
