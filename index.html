@@ -1,169 +1,212 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-	<link rel="stylesheet" href="style.css">
-</head>
-<body class="no-margin">
-	<div class="row black medium-size">
-		<div class="column">
-			<a class="link font_white lg" href="#intro">Introdução</a>
-		</div>
-		<div class="column">
-			<a class="link font_white lg" href="#projects">Projetos</a>
-		</div>
-		<div class="column">
-			<a class="link font_white lg" href="#formation">Educação</a>
-		</div>
-		<div class="column">
-			<a class="link font_white lg" href="#skills">Habilidades</a>
-		</div>
-	</div>
-
-	<div class="parallax">
-		<img class="perf_img" src="https://avatars.githubusercontent.com/u/55860702?s=400&u=6cff84555fc97f7b2e7fead8d542df8d892b9205&v=4" width="300" height="300">
-		<h2 class="font_white lg">Renê Michel Santana Padilha</h2>
-		<h2 class="font_white lg">Contato:</h2>
-		<a href="https://github.com/Rene-Michel99">
-			<img class="interative-img" src="icons/github.png" width="64" height="64">
-		</a>
-		<a href="https://www.linkedin.com/in/ren%C3%AA-michel-santana-padilha-a69394200/">
-			<img  class="interative-img" src="icons/linkedin.png">
-		</a>
-	</div>
-
-	<div id="intro" class="row grey-color">
-		<h1 class="font_black lg"><img src="icons/programmer.png" width="64" height="64">Introdução</h1>
-	</div>
-
-	<div class="row">
-		<div class="column center-text">
-			<h3 class="font_black md">Desde 2018, quando comecei a cursar Engenharia de Software na UFC, estudo e desenvolvo aplicações para pôr o que aprendi em prática e obter experiência a partir disso sempre priorizando otimização, segurança e eficiência de forma mais rápida para cada sistema desenvolvido assim como seguindo os padrões de codificação de cada linguagem. Desde 2020 trabalho com frontend tendo desenvolvidos projetos utilizando javascript e suas funcionalidade extras como ajax, html, css e bootstrap.</h3>
-		</div>
-	</div>
-
-	<div id="projects" class="row grey-color">
-		<h1 class="font_black lg"><img src="icons/project.png" width="64" height="64">Projetos Desenvolvidos</h1>
-	</div>
-
-	<div>
-		<div class="row">
-			<div class="column android-color box">
-				<img src="icons/android.png" width="64" height="64">
-				<p class="font_white sm">App de randomização para a plataforma android desenvolvido usando a linguagem java com o android studio.</p>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <link rel="stylesheet" href="./src/css/style.css">
+        <link rel="icon" href="./src/icons/icon-page.png">
+        <title>Meu Portólio</title>
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li>
+                    <div class="dropdown">
+                        <button onclick="drop_btn()" class="dropbtn">Dropdown</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#intro">Introdução</a>
+                          <a href="#projects">Projetos</a>
+                          <a href="#formation">Formação</a>
+                          <a href="#skills">Habilidades</a>
+                        </div>
+                    </div>
+                </li>
+                <li></li>
+                <li><a id="ln1" class="link-section" href="#intro">Introdução</a></li>
+                <li><a id="ln2" class="link-section" href="#projects">Projetos</a></li>
+                <li><a id="ln3" class="link-section" href="#formation">Formação</a></li>
+                <li><a id="ln4" class="link-section" href="#skills">Habilidades</a></li>
+            </ul>
+        </nav>
+        <div class="sections">
+            <div id="welcome-section">
+                <h1 id="welcome-text">Bem vindo!</h1>
+                <p id="intro-text">Meu nome é Renê Michel e sou um programador.</p>
+            </div>
+            <div id="intro">
+                <div class="sec-header">
+                    <h2 class="title"><img src="./src/icons/programmer.png" width="64" height="64">Introdução</h2>
+                </div>
+                <div class="sec-body">
+                    <h3 class="text">Desde 2018, quando comecei a cursar Engenharia de Software na UFC, estudo e desenvolvo aplicações para pôr o que aprendi em prática e obter experiência a partir disso sempre priorizando otimização, segurança e eficiência de forma mais rápida para cada sistema desenvolvido assim como seguindo os padrões de codificação de cada linguagem. Desde 2020 trabalho com frontend tendo desenvolvidos projetos utilizando javascript e suas funcionalidade extras como ajax, html, css e bootstrap.</h3>
+                    <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="pt_BR" data-type="vertical" data-theme="dark" data-vanity="renê-michel-santana-padilha-a69394200">
+                        <a class="LI-simple-link" href='https://br.linkedin.com/in/ren%C3%AA-michel-santana-padilha-a69394200?trk=profile-badge' target="_blank">Renê Michel Santana Padilha</a>
+                    </div>
+                    <div id="div-github">
+                        <div>
+                            <h2 class="title" style="padding:4px;">Dados do Github</h2>
+                            <img id="piechart" src="./src/meta-chart.png">
+                        </div>
+                        <div>
+                            <a href="https://github.com/Rene-Michel99">
+                                <img id="profile-link" src="./src/icons/github.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="projects">
+                <div class="sec-header">
+                    <h2 class="title"><img src="./src/icons/project.png" width="64" height="64">Alguns Projetos</h2>
+                </div>
+                <div class="sec-projects">
+                    <div id="python" class="card">
+                        <div class="header-project">
+                            <img src="./src/icons/python.png" width="64" height="64">
+                            <img class="right-img" src="./src/icons/batalha-naval.jpg">
+                        </div>
+                        <h3 class="project-tile">Batalha Naval com IA</h3>
+                        <p class="text white">Jogo de batalha naval utilizando algoritmos de machine learning treinados do zero a partir de um dataset criado, utlizando 2 modelos para comparção de desempenho entre ambos um deles sendo utilizado o algoritmo KNN e o outro Naive Bayes.</p>
+                    </div>
+                    <div id="android" class="card">
+                        <div class="header-project">
+                            <img src="./src/icons/android.png" width="64" height="64">
+                            <img class="right-img" src="./src/icons/random-icon-generator.png">
+                        </div>
+                        <h3 class="project-tile">App para Randomizar números</h3>
+                        <p class="text white">App de randomização para a plataforma android desenvolvido usando a linguagem java com o android studio.</p>
+                    </div>
+                    <div id="javascript" class="card">
+                        <div class="header-project">
+                            <img src="./src/icons/javascript.png" width="64" height="64">
+                            <img class="right-img" src="./src/icons/aquarium.jpg">
+                        </div>
+                        <h3 class="project-tile">Aquário</h3>
+                        <p class="text white">Página Web que simula um pequeno aquário e trás informações a respeito dos peixes ao clicar neles, foi feito com javascript para movimentação e escolha dos peixes e HTML e CSS.</p>
+                    </div>
+                    <div id="nodejs" class="card">
+                        <div class="header-project">
+                            <img src="./src/icons/node.jpg" width="64" height="64" style="border-radius: 50%;">
+                            <img class="right-img" src="./src/icons/channels.jpg">
+                        </div>
+                        <h3 class="project-tile">Site de Música</h3>
+                        <p class="text white">Sistema web para escutar Música utlizando bootstrap para a estilização da página e nodejs como backend, o sistema possui login e cadastro e utiliza o mongoose para se conectar ao MongoDB.</p>
+                    </div>
+                    <div id="csharp" class="card">
+                        <div class="header-project">
+                            <img src="./src/icons/csharp.png" width="64" height="64" style="border-radius: 50%;">
+                            <img class="right-img" src="./src/icons/tasks.png">
+                        </div>
+                        <h3 class="project-tile">Notas e Tarefas</h3>
+                        <p class="text white">Sistema para criação de notas e tarefas desenvolvido em C# e utilizando como banco de dados o MySql.</p>
+                    </div>
+                    <div id="php" class="card">
+                        <div class="header-project">
+                            <img src="./src/icons/php.png" width="64" height="64" style="border-radius: 50%;">
+                            <img class="right-img" src="./src/icons/marcounter.png">
+                        </div>
+                        <h3 class="project-tile">Gerenciador de Horas Complementares</h3>
+                        <p class="text white">Sistema web para gerenciamento de horas complementares para alunos, com back-end desenvolvido em PHP inserido no Heroku e MongoDB atlas como o banco de dados, e o frontend desenvolvido utlizando javascript + react native. Na comunicação do frontend com o backend foi utilizado o ajax do javascript.</p>
+                    </div>
+                    <div id="python" class="card">
+                        <div class="header-project">
+                            <img src="./src/icons/python.png" width="64" height="64">
+                            <img class="right-img" src="./src/icons/dpll.png">
+                        </div>
+                        <h3 class="project-tile">DPLL SAT Solver</h3>
+                        <p class="text white">Algoritmo DPLL desenvolvido em python para solução do problema SAT de fórmulas lógicas no padrão FNC com otimização de heurísticas.</p>
+                    </div>
+                    <div id="csharp" class="card">
+                        <div class="header-project">
+                            <img src="./src/icons/csharp.png" width="64" height="64" style="border-radius: 50%;">
+                            <img class="right-img" src="./src/icons/weather.jpg">
+                        </div>
+                        <h3 class="project-tile">Previsão do Clima</h3>
+                        <p class="text white">Simples interface para visualização da previsão do clima desenvolvido em C# e utilizando web scrapper para coletar os dados.</p>
+                    </div>
+                    <div id="python" class="card">
+                        <div class="header-project">
+                            <img src="./src/icons/python.png" width="64" height="64">
+                            <img class="right-img" src="./src/icons/Wave_IA.gif">
+                        </div>
+                        <h3 class="project-tile">Assistente Virtual</h3>
+                        <p class="text white">Assistente virtual desenvolvida em python utilizando algoritmos de deep learning treinados do 0, possuindo uma rede neural CNN para reconhecimento de gestos e outra para conversação com vários comandos de voz.</p>
+                    </div>
+                </div>
+            </div>
+			<div id="formation">
+				<div class="sec-header">
+					<h2 class="title"><img src="./src/icons/hat.png" width="64" height="64">Formação</h2>
+				</div>
+				<div class="sec-body">
+					<ul class="list">
+						<li>
+							<div class="sec-title">
+								<img src="./src/icons/ufc.png" style="border-radius: 50%;" width="64" height="64">
+								<p class="text-form-title">Cursando engenharia de Software na UFC</p>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="column javascript-color box">
-				<img src="icons/javascript.png" width="64" height="64">
-				<p class="font_white sm">Sistema web para gerenciamento de estoque utilizando no frontend javascript, html e css.</p>
+			<div id="skills">
+				<div class="sec-header">
+					<h2 class="title"><img src="./src/icons/skill.png" width="64" height="64">Habilidades</h2>
+				</div>
+				<div class="sec-body">
+					<div class="grid-skills">
+						<div class="sec-title">
+							<img src="./src/icons/python.png" width="64" height="64">
+							<p class="text-sec-title">Python</p>
+						</div>
+						<div class="sec-title">
+							<img src="./src/icons/csharp.png" width="64" height="64">
+							<p class="text-sec-title">C#</p>
+						</div>
+						<div class="sec-title">
+							<img src="./src/icons/javascript.png" width="64" height="64">
+							<p class="text-sec-title">JavaScript</p>
+						</div>
+						<div class="sec-title">
+							<img src="./src/icons/htmlcss.png" style="border-radius: 50%;" width="64" height="64">
+							<p class="text-sec-title">HTML & CSS</p>
+						</div>
+						<div class="sec-title">
+							<img src="./src/icons/php.png" style="border-radius: 50%;" width="64" height="64">
+							<p class="text-sec-title">PHP</p>
+						</div>
+						<div class="sec-title">
+							<img src="./src/icons/java.png" style="border-radius: 50%;" width="64" height="64">
+							<p class="text-sec-title">Java</p>
+						</div>
+						<div class="sec-title">
+							<img src="./src/icons/c++.png" style="border-radius: 50%;" width="64" height="64">
+							<p class="text-sec-title">C++</p>
+						</div>
+						<div class="sec-title">
+							<img src="./src/icons/godot.png" style="border-radius: 50%;" width="64" height="64">
+							<p class="text-sec-title">Godot</p>
+						</div>
+						<div class="sec-title">
+							<img src="./src/icons/mysql.png" style="border-radius: 50%;" width="64" height="64">
+							<p class="text-sec-title">MySql</p>
+						</div>
+						<div class="sec-title">
+							<img src="./src/icons/mongodb.jpg" style="border-radius: 50%;" width="64" height="64">
+							<p class="text-sec-title">MongoDB</p>
+						</div>
+						<div class="sec-title">
+							<img src="./src/icons/git.png" style="border-radius: 50%;" width="64" height="64">
+							<p class="text-sec-title">Git e GitHub</p>
+						</div>
+						<div class="sec-title">
+							<img src="./src/icons/linux.png" style="border-radius: 50%;" width="64" height="64">
+							<p class="text-sec-title">Linux</p>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="column php-color box">
-				<img src="icons/php.png" width="64" height="64">
-				<p class="font_white sm">Sistema web para gerenciamento de horas complementares para alunos, com back-end desenvolvido em PHP inserido no Heroku e MongoDB atlas como o banco de dados, e o frontend desenvolvido utlizando javascript + react native. Na comunicação do frontend com o backend foi utilizado o ajax do javascript.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="column javascript-color box">
-				<img src="icons/javascript.png" width="64" height="64">
-				<p class="font_white sm">Sistema web de player de música utilizando php para buscar os arquivos na memória, javascript para controlar as funcionalidades na página, ajax para se comunicar com o código php e html e css para o design da página.</p>
-			</div>
-			<div class="column python-color box">
-				<img src="icons/python.png" width="64" height="64">
-				<p class="font_white sm">Assistente virtual desenvolvida em python utilizando algoritmos de deep learning treinados do 0, possuindo uma rede neural CNN para reconhecimento de gestos e outra para conversação.</p>
-			</div>
-			<div class="column python-color box">
-				<img src="icons/python.png" width="64" height="64">
-				<p class="font_white sm">Jogo de batalha naval utilizando algoritmos de machine learning treinados do zero a partir de um dataset criado, utlizando 2 modelos para comparção de desempenho entre ambos um deles sendo utilizado o algoritmo KNN e o outro Naive Bayes.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="column csharp-color box">
-				<img src="icons/csharp.png" width="64" height="64">
-				<p class="font_white sm">Sistema para criação de notas desenvolvido em C# e utilizando como banco de dados o MySql.</p>
-			</div>
-			<div class="column python-color box">
-				<img src="icons/python.png" width="64" height="64">
-				<p class="font_white sm">Algoritmo DPLL desenvolvido em python para solução de fórmulas lógicas no padrão FNC com otimização de heurísticas.</p>
-			</div>
-			<div class="column csharp-color box">
-				<img src="icons/csharp.png" width="64" height="64">
-				<p class="font_white sm">Simples interface para visualização da previsão do clima desenvolvido em C# e utilizando web scrapper para coletar os dados.</p>
-			</div>
-		</div>
-		<div div class="row">
-			<div class="column node-color box">
-				<img src="icons/node.jpg" class="rounded" width="64" height="64">
-				<p class="font_white sm">Sistema web para escutar Música utlizando bootstrap para a estilização da página e nodejs como backend, o sistema possui login e cadastro e utiliza o mongoose para se conectar ao MongoDB</p>
-			</div>
-		</div>
-	</div>
-
-	<div id="formation" class="row grey-color">
-		<h1 class="font_black lg"><img src="icons/hat.png" width="64" height="64">Educação</h1>
-	</div>
-	<div class="row">
-		<div class="column">
-			<ul>
-				<li>
-					<h3 class="font_black md">2018 - Em curso.<br>Cursando 6 semestre de engenharia de software na UFC.</h3>
-				</li>
-				<li>
-					<h3 class="font_black md">Finalizado em 2017.<br>Ensino Médio completo.</h3>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<div id="skills" class="row grey-color">
-		<h1 class="font_black lg"><img src="icons/skill.png" width="64" height="64">Habilidades</h1>
-	</div>
-	<div class="row">
-		<div class="column">
-			<ul>
-				<li>
-					<h3 class="font_black md">PHP</h3>
-				</li>
-				<li>
-					<h3 class="font_black md">Javascript</h3>
-				</li>
-				<li>
-					<h3 class="font_black md">HTML & CSS</h3>
-				</li>
-			</ul>
-		</div>
-		<div class="column">
-			<ul>
-				<li>
-					<h3 class="font_black md">Python</h3>
-				</li>
-				<li>
-					<h3 class="font_black md">C#</h3>
-				</li>
-				<li>
-					<h3 class="font_black md">Java</h3>
-				</li>
-			</ul>
-		</div>
-		<div class="column">
-			<ul>
-				<li>
-					<h3 class="font_black">MySql</h3>
-				</li>
-				<li>
-					<h3 class="font_black">MongoDB</h3>
-				</li>
-				<li>
-					<h3 class="font_black">Git e Github</h3>
-				</li>
-				<li>
-					<h3 class="font_black">Linux</h3>
-				</li>
-			</ul>
-		</div>
-	</div>
-</body>
-<foot>
-	<div class="row black">
-		<h5 class="font_white">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></h5>
-	</div>
-</foot>
+        </div>
+        <script src="./src/js/script.js"></script>
+    </body>
 </html>

@@ -1,0 +1,333 @@
+body{
+    margin:0px;
+}
+*{
+    scroll-behavior: smooth !important;
+}
+.navbar{
+    display:flex;
+    margin-top:0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    padding:8px;
+    background-color:#050a30;
+    box-shadow: 2px 2px 2px #03061d;
+    z-index: 10;
+    margin-bottom: 70px;
+}
+.nav-list{
+    display: grid;
+    grid-template-columns: 30% 50% 25% 25% 25% 25%;
+    list-style: none;
+}
+.list{
+	display:flex;
+	justify-content:center;
+}
+#ln1{
+    text-decoration: none;
+}
+#ln2{
+    text-decoration: none;
+}
+#ln4{
+    text-decoration: none;
+}
+#ln4{
+    text-decoration: none;
+}
+
+.link-section{
+    font-family: monospace;
+    font-size:24px;
+    
+    color:rgba(255, 255, 255, 0.623);
+}
+.link-section:hover{
+    color:white;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #000c66;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #0000ff;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 12;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display:block;
+}
+#intro-text{
+    font-family: monospace;
+    color:#7ec8e3;
+    font-size:2rem;
+    font-weight: bold;
+}
+#welcome-text{
+    font-family: monospace;
+    font-size: 6rem;
+    color: white;
+}
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+    height:100vh;
+    background-image: url("../icons/back.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding:0px;
+}
+.sections{
+    display:grid;
+    grid-template-rows: auto auto;
+}
+#intro{
+    display:grid;
+    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    padding:8px;
+    grid-template-rows: auto auto;
+    scroll-behavior: smooth !important;
+}
+#projects{
+    display:grid;
+    background-color: #000c66;
+    padding: 8px;
+    left:0;
+    justify-content: center;
+}
+#formation{
+	display: flex;
+	background-color: #0000ff;
+	flex-direction: column;
+	justify-content: center;
+}
+#skills{
+	display: flex;
+	flex-direction: column;
+	background-color: #7ec8e3;
+}
+.title{
+    color: rgba(255, 255, 255, 0.932);
+    font-family: monospace;
+}
+.sec-header{
+    display:flex;
+    justify-content: center;
+}
+.sec-body{
+    padding:8px;
+    display:grid;
+    grid-template-areas: "a b c" ;
+    grid-template-columns: 39% 29% 33%;
+}
+.sec-projects{
+    padding:4px;
+    display:grid;
+    grid-template-areas: 
+    "a b c"
+    "d e f"
+    "f g h";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
+    gap: 4px;
+}
+.sec-title{
+	display: flex;
+	justify-content: center;
+	padding:8px;
+}
+.grid-skills{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-areas:"a b c";
+	grid-template-columns: 33% 33% 33%;
+	gap: 8px;
+}
+.text-sec-title{
+	display: flex;
+	margin-top:25px;
+	color: white;
+	font-family: monospace;
+	font-size: 18px;
+	font-weight: bold;
+}
+.text-form-title{
+	display: flex;
+	color: white;
+	margin-top:18px;
+	font-family: monospace;
+	font-size: 18px;
+	font-weight: bold;
+}
+#profile-link{
+	background-color:white;
+	border-radius:50%;
+	border:2px solid #3B719F;
+	box-shadow: 2px 2px 2px rgb(17, 17, 17);
+	width:64px;
+	height:64px;
+}
+#profile-link:hover{
+    box-shadow: 4px 4px 4px rgb(17, 17, 17);
+    border: 2px solid #5cadf3;
+    transform: scale(1.1);
+}
+.text{
+    font-family: monospace;
+    color: #7ec8e3;
+    text-align: start;
+    padding:4px;
+}
+.project-tile{
+    font-family: monospace;
+    color: white;
+    text-align: center;
+}
+#div-github{
+    display: grid;
+    grid-template-rows: 20% 50%;
+}
+#piechart{
+    width: 420px;
+    height: 350px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(15, 2, 2, 0.747);
+}
+.card{
+    display: grid;
+    grid-template-rows: auto auto;
+    border-radius: 4px;
+    padding:8px;
+}
+.icon-project{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.right-img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    position: relative;
+    right:30px;
+}
+.header-project{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.white{
+    color: white;
+}
+#python{
+    background-color: #3B719F;
+}
+#android{
+    background-color:#32BF84;
+}
+#javascript{
+    background-color: #FFC513;
+}
+#nodejs{
+    background-color: #3a3b3b;
+}
+#csharp{
+    background-color: #9900FA;
+}
+#php{
+    background-color: #3E82FC;
+}
+
+@media(max-width: 450px){
+    #ln1{
+        display:none;
+    }
+    #ln2{
+        display:none;
+    }
+    #ln3{
+        display:none;
+    }
+    #ln4{
+        display:none;
+    }
+    .sec-body{
+        padding:8px;
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "a" 
+        "b" 
+        "c";
+        justify-items: center;
+    }
+    .sec-projects{
+        padding:4px;
+        display:grid;
+        grid-template-areas: 
+        "a b"
+        "c d"
+        "e f"
+        "g h";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 50% 50%;
+    }
+	.grid-skills{
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		grid-template-areas:
+		"a b"
+		"c d"
+		"e f"
+		"g h"
+		"i j"
+		"k l";
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto auto auto auto auto auto;
+		gap: 8px;
+	}
+}
