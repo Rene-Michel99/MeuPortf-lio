@@ -330,4 +330,17 @@ body{
 		grid-template-rows: auto auto auto auto auto auto;
 		gap: 8px;
 	}
+	#welcome-section{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-top:50px;
+		height:100vh;
+		background-image: url("../icons/back.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		padding:0px;
+	}
 }
