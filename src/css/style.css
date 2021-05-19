@@ -182,7 +182,13 @@ body{
 	display: grid;
 	justify-content: center;
 	align-items: center;
-	grid-template-areas:"a b c";
+	grid-template-areas:
+    "a b c"
+    "d e f"
+    "g h i"
+    "j k l";
+    width:50vw;
+    margin-left: 22vw;
 	grid-template-columns: 33% 33% 33%;
 	gap: 8px;
 }
@@ -327,6 +333,8 @@ body{
 		"i j"
 		"k l";
 		grid-template-columns: 50% 50%;
+        width:auto;
+        margin-left: 0vw;
 		grid-template-rows: auto auto auto auto auto auto;
 		gap: 8px;
 	}
