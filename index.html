@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="./src/css/style.css">
         <link rel="icon" href="./src/icons/icon-page.png">
         <title>Meu Portólio</title>
-        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+        <script type="text/javascript" src="./src/js/script.js"></script>
     </head>
     <body>
         <nav class="navbar">
@@ -21,7 +21,9 @@
                         </div>
                     </div>
                 </li>
-                <li></li>
+
+                <li>
+                </li>
                 <li><a id="ln1" class="link-section" href="#intro">Introdução</a></li>
                 <li><a id="ln2" class="link-section" href="#projects">Projetos</a></li>
                 <li><a id="ln3" class="link-section" href="#formation">Formação</a></li>
@@ -29,183 +31,170 @@
             </ul>
         </nav>
         <div class="sections">
-            <div id="welcome-section">
-                <h1 id="welcome-text">Bem Vindo!</h1>
+          <section id="welcome-section">
+            <div id="perfil">
+              <div id="badges">
+                <a href="https://github.com/Rene-Michel99">
+                  <img class="github-icon" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">
+                </a>
+                <a href="https://www.linkedin.com/in/ren%C3%AA-michel-santana-padilha-a69394200/">
+                  <img id="linkedin-icon" src="https://image.flaticon.com/icons/png/512/174/174857.png">
+                </a>
+              </div>
+              <img id="perfil-img" src="https://media-exp3.licdn.com/dms/image/C4E03AQGuDi3j2bVHcQ/profile-displayphoto-shrink_800_800/0/1616988301171?e=1629331200&v=beta&t=P0gkzYPNZWT8nmJhPt4rRkYbAtBrIkJ-jIhjYfrOfsc" width="128" height="128">
             </div>
-            <div id="intro">
-                <div class="sec-header">
-                    <h2 class="title"><img src="./src/icons/programmer.png" width="64" height="64">Introdução</h2>
-                </div>
-                <div class="sec-body">
-                    <h3 class="text">Desde 2018, quando comecei a cursar Engenharia de Software na UFC, estudo e desenvolvo aplicações para pôr o que aprendi em prática e obter experiência a partir disso sempre priorizando otimização, segurança e eficiência de forma mais rápida para cada sistema desenvolvido assim como seguindo os padrões de codificação de cada linguagem. Desde 2020 trabalho com frontend tendo desenvolvidos projetos utilizando javascript e suas funcionalidade extras como ajax, html, css e bootstrap.</h3>
-                    <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="pt_BR" data-type="vertical" data-theme="dark" data-vanity="renê-michel-santana-padilha-a69394200">
-                        <a class="LI-simple-link" href='https://br.linkedin.com/in/ren%C3%AA-michel-santana-padilha-a69394200?trk=profile-badge' target="_blank">Renê Michel Santana Padilha</a>
-                    </div>
-                    <div id="div-github">
-                        <div>
-                            <h2 class="title" style="padding:4px;">Dados do Github</h2>
-                            <img id="piechart" src="./src/meta-chart.png">
-                        </div>
-                        <div>
-                            <a href="https://github.com/Rene-Michel99">
-                                <img id="profile-link" src="./src/icons/github.png">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div id="box-text">
+              <h2 id="welcome-text">Olá, eu sou Renê Michel</h2>
+              <h3 id="occupation">Programador</h3>
+              <p id="lt-intro">Experiência com machine learning, deep learning, backend e frontend.</p>
+              <button id="contact-btn">Contato</button>
             </div>
-            <div id="projects">
-                <div class="sec-header">
-                    <h2 class="title"><img src="./src/icons/project.png" width="64" height="64">Alguns Projetos</h2>
-                </div>
-                <div class="sec-projects">
-                    <div id="python" class="card">
-                        <div class="header-project">
-                            <img src="./src/icons/python.png" width="64" height="64">
-                            <img class="right-img" src="./src/icons/batalha-naval.jpg">
-                        </div>
-                        <h3 class="project-tile">Batalha Naval com IA</h3>
-                        <p class="text white">Jogo de batalha naval utilizando algoritmos de machine learning treinados do zero a partir de um dataset criado, utlizando 2 modelos para comparção de desempenho entre ambos um deles sendo utilizado o algoritmo KNN e o outro Naive Bayes.</p>
-                    </div>
-                    <div id="android" class="card">
-                        <div class="header-project">
-                            <img src="./src/icons/android.png" width="64" height="64">
-                            <img class="right-img" src="./src/icons/random-icon-generator.png">
-                        </div>
-                        <h3 class="project-tile">App para Randomizar números</h3>
-                        <p class="text white">App de randomização para a plataforma android desenvolvido usando a linguagem java com o android studio.</p>
-                    </div>
-                    <div id="javascript" class="card">
-                        <div class="header-project">
-                            <img src="./src/icons/javascript.png" width="64" height="64">
-                            <img class="right-img" src="./src/icons/aquarium.jpg">
-                        </div>
-                        <h3 class="project-tile">Aquário</h3>
-                        <p class="text white">Página Web que simula um pequeno aquário e trás informações a respeito dos peixes ao clicar neles, foi feito com javascript para movimentação e escolha dos peixes e HTML e CSS.</p>
-                    </div>
-                    <div id="nodejs" class="card">
-                        <div class="header-project">
-                            <img src="./src/icons/node.jpg" width="64" height="64" style="border-radius: 50%;">
-                            <img class="right-img" src="./src/icons/channels.jpg">
-                        </div>
-                        <h3 class="project-tile">Site de Música</h3>
-                        <p class="text white">Sistema web para escutar Música utlizando bootstrap para a estilização da página e nodejs como backend, o sistema possui login e cadastro e utiliza o mongoose para se conectar ao MongoDB.</p>
-                    </div>
-                    <div id="csharp" class="card">
-                        <div class="header-project">
-                            <img src="./src/icons/csharp.png" width="64" height="64" style="border-radius: 50%;">
-                            <img class="right-img" src="./src/icons/tasks.png">
-                        </div>
-                        <h3 class="project-tile">Notas e Tarefas</h3>
-                        <p class="text white">Sistema para criação de notas e tarefas desenvolvido em C# e utilizando como banco de dados o MySql.</p>
-                    </div>
-                    <div id="php" class="card">
-                        <div class="header-project">
-                            <img src="./src/icons/php.png" width="64" height="64" style="border-radius: 50%;">
-                            <img class="right-img" src="./src/icons/marcounter.png">
-                        </div>
-                        <h3 class="project-tile">Gerenciador de Horas Complementares</h3>
-                        <p class="text white">Sistema web para gerenciamento de horas complementares para alunos, com back-end desenvolvido em PHP inserido no Heroku e MongoDB atlas como o banco de dados, e o frontend desenvolvido utlizando javascript + react native. Na comunicação do frontend com o backend foi utilizado o ajax do javascript.</p>
-                    </div>
-                    <div id="python" class="card">
-                        <div class="header-project">
-                            <img src="./src/icons/python.png" width="64" height="64">
-                            <img class="right-img" src="./src/icons/dpll.png">
-                        </div>
-                        <h3 class="project-tile">DPLL SAT Solver</h3>
-                        <p class="text white">Algoritmo DPLL desenvolvido em python para solução do problema SAT de fórmulas lógicas no padrão FNC com otimização de heurísticas.</p>
-                    </div>
-                    <div id="csharp" class="card">
-                        <div class="header-project">
-                            <img src="./src/icons/csharp.png" width="64" height="64" style="border-radius: 50%;">
-                            <img class="right-img" src="./src/icons/weather.jpg">
-                        </div>
-                        <h3 class="project-tile">Previsão do Clima</h3>
-                        <p class="text white">Simples interface para visualização da previsão do clima desenvolvido em C# e utilizando web scrapper para coletar os dados.</p>
-                    </div>
-                    <div id="python" class="card">
-                        <div class="header-project">
-                            <img src="./src/icons/python.png" width="64" height="64">
-                            <img class="right-img" src="./src/icons/Wave_IA.gif">
-                        </div>
-                        <h3 class="project-tile">Assistente Virtual</h3>
-                        <p class="text white">Assistente virtual desenvolvida em python utilizando algoritmos de deep learning treinados do 0, possuindo uma rede neural CNN para reconhecimento de gestos e outra para conversação com vários comandos de voz.</p>
-                    </div>
-                </div>
+          </section>
+
+          <section id="intro">
+            <h2 class="title-section">Sobre Mim</h2>
+            <img id="about-img" src="https://avatars.githubusercontent.com/u/55860702?s=400&u=6cff84555fc97f7b2e7fead8d542df8d892b9205&v=4">
+            <p class="text">Desde 2018, quando comecei a cursar Engenharia de Software na UFC, estudo e desenvolvo aplicações para pôr o que aprendi em prática e obter experiência a partir disso sempre priorizando otimização, segurança e eficiência de forma mais rápida para cada sistema desenvolvido assim como seguindo os padrões de codificação de cada linguagem. Desde 2020 trabalho com frontend tendo desenvolvidos projetos utilizando javascript e suas funcionalidade extras como ajax, html, css e bootstrap.</p>
+            <div id="data-box">
+              <div class="data">
+                <h3>+3</h3>
+                <p class="text">Anos de experiência</p>
+              </div>
+              <div class="data">
+                <h3>27</h3>
+                <p class="text">Projetos conclídos</p>
+              </div>
+              <div class="data">
+                <h3>6</h3>
+                <p class="text">Meses trabalhando como pesquisador</p>
+              </div>
             </div>
-			<div id="formation">
-				<div class="sec-header">
-					<h2 class="title"><img src="./src/icons/hat.png" width="64" height="64">Formação</h2>
-				</div>
-				<div class="sec-body">
-					<ul class="list">
-						<li>
-							<div class="sec-title">
-								<img src="./src/icons/ufc.png" style="border-radius: 50%;" width="64" height="64">
-								<p class="text-form-title">Cursando engenharia de Software na UFC</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div id="skills">
-				<div class="sec-header">
-					<h2 class="title"><img src="./src/icons/skill.png" width="64" height="64">Habilidades</h2>
-				</div>
-				<div class="sec-body">
-					<div class="grid-skills">
-						<div class="sec-title">
-							<img src="./src/icons/python.png" width="64" height="64">
-							<p class="text-sec-title">Python</p>
-						</div>
-						<div class="sec-title">
-							<img src="./src/icons/csharp.png" width="64" height="64">
-							<p class="text-sec-title">C#</p>
-						</div>
-						<div class="sec-title">
-							<img src="./src/icons/javascript.png" width="64" height="64">
-							<p class="text-sec-title">JavaScript</p>
-						</div>
-						<div class="sec-title">
-							<img src="./src/icons/htmlcss.png" style="border-radius: 50%;" width="64" height="64">
-							<p class="text-sec-title">HTML & CSS</p>
-						</div>
-						<div class="sec-title">
-							<img src="./src/icons/php.png" style="border-radius: 50%;" width="64" height="64">
-							<p class="text-sec-title">PHP</p>
-						</div>
-						<div class="sec-title">
-							<img src="./src/icons/java.png" style="border-radius: 50%;" width="64" height="64">
-							<p class="text-sec-title">Java</p>
-						</div>
-						<div class="sec-title">
-							<img src="./src/icons/c++.png" style="border-radius: 50%;" width="64" height="64">
-							<p class="text-sec-title">C++</p>
-						</div>
-						<div class="sec-title">
-							<img src="./src/icons/godot.png" style="border-radius: 50%;" width="64" height="64">
-							<p class="text-sec-title">Godot</p>
-						</div>
-						<div class="sec-title">
-							<img src="./src/icons/mysql.png" style="border-radius: 50%;" width="64" height="64">
-							<p class="text-sec-title">MySql</p>
-						</div>
-						<div class="sec-title">
-							<img src="./src/icons/mongodb.jpg" style="border-radius: 50%;" width="64" height="64">
-							<p class="text-sec-title">MongoDB</p>
-						</div>
-						<div class="sec-title">
-							<img src="./src/icons/git.png" style="border-radius: 50%;" width="64" height="64">
-							<p class="text-sec-title">Git e GitHub</p>
-						</div>
-						<div class="sec-title">
-							<img src="./src/icons/linux.png" style="border-radius: 50%;" width="64" height="64">
-							<p class="text-sec-title">Linux</p>
-						</div>
-					</div>
-				</div>
-			</div>
+          </section>
+
+          <section id="skills">
+            <h2 class="title-section">Habilidades</h2>
+            <div class="sk-content">
+              <div class="area">
+                <label for="toggle-1">
+                  <img class="skills-icon" src="https://image.flaticon.com/icons/png/512/4661/4661245.png">
+                  <h3 class="title-section">Backend</h3>
+                </label>
+                <input id="toggle-1" type="checkbox">
+                <div id="backend">
+                  <div class="field">
+                    <h4 class="title-section">PHP:</h4>
+                    <p class="text">2 projetos</p>
+                  </div>
+                  <div class="field">
+                    <h4 class="title-section">Node.js:</h4>
+                    <p class="text">2 projetos</p>
+                  </div>
+                  <div class="field">
+                    <h4 class="title-section">MongoDB:</h4>
+                    <p class="text">3 projetos</p>
+                  </div>
+                  <div class="field">
+                    <h4 class="title-section">MySQL:</h4>
+                    <p class="text">3 projetos</p>
+                  </div>
+                  <div class="field">
+                    <h4 class="title-section">Python:</h4>
+                    <p class="text">1 projeto</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="area">
+                <label for="toggle-2">
+                  <img class="skills-icon" src="https://img-premium.flaticon.com/png/512/1367/premium/1367672.png?token=exp=1624128920~hmac=a028cbffe18dae0f07acaddda321318e">
+                  <h3 class="title-section">Frontend</h3>
+                </label>
+                <input id="toggle-2" type="checkbox">
+                <div id="frontend">
+                  <div class="field">
+                    <h4 class="title-section">HTML:</h4>
+                    <p class="text">5 projetos</p>
+                  </div>
+                  <div class="field">
+                    <h4 class="title-section">CSS:</h4>
+                    <p class="text">5 projetos</p>
+                  </div>
+                  <div class="field">
+                    <h4 class="title-section">JavaScript:</h4>
+                    <p class="text">2 projetos</p>
+                  </div>
+                  <div class="field">
+                    <h4 class="title-section">React:</h4>
+                    <p class="text">1 projeto</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="area">
+                <label for="toggle-3">
+                  <img class="skills-icon" src="https://image.flaticon.com/icons/png/512/3617/3617186.png">
+                  <h3 class="title-section">Machine Learning</h3>
+                </label>
+                <input id="toggle-3" type="checkbox">
+                <div id="ia">
+                  <div class="field">
+                    <h4 class="title-section">Python:</h4>
+                    <p class="text">5 projetos</p>
+                  </div>
+                  <div class="field">
+                    <h4 class="title-section">R:</h4>
+                    <p class="text">2 projetos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="formation">
+            <h2 class="title-section">Qualificação</h2>
+            <div class="timeline">
+              <div class="container_right">
+                <div class="ball-right"></div>
+                <div class="form-content">
+                  <h2>2018</h2>
+                  <p class="text">Matrícula na UFC</p>
+                </div>
+              </div>
+
+               <div class="container_left">
+                 <div class="ball-left"></div>
+                 <div class="form-content">
+                    <h2>2019</h2>
+                    <p class="text">Machine Learning - Udemy</p>
+                  </div>
+                </div>
+
+              <div class="container_right">
+                <div class="ball-right"></div>
+                <div class="form-content">
+                  <h2>2019</h2>
+                  <p class="text">Backend - Udemy</p>
+                </div>
+              </div>
+
+              <div class="container_left">
+                <div class="ball-left"></div>
+                <div class="form-content">
+                   <h2>2020</h2>
+                   <p class="text">Frontend - Udemy</p>
+                 </div>
+               </div>
+
+               <div class="container_right">
+                 <div class="ball-right"></div>
+                 <div class="form-content">
+                   <h2>2021</h2>
+                   <p class="text">Visão Computacional - Coursera</p>
+                 </div>
+               </div>
+          </section>
+
+
         </div>
-        <script src="./src/js/script.js"></script>
     </body>
 </html>
