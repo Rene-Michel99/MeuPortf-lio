@@ -493,7 +493,6 @@ label:hover{
   #welcome-text{
     font-family: monospace;
     font-weight: bold;
-    line-height: 0px;
     font-size: 32px;
   }
   .title-section{
