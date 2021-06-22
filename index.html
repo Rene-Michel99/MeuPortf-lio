@@ -5,6 +5,8 @@
         <link rel="stylesheet" href="./src/css/style.css">
         <link rel="icon" href="./src/icons/icon-page.png">
         <title>Meu Portólio</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./src/js/data.js"></script>
         <script type="text/javascript" src="./src/js/script.js"></script>
     </head>
     <body>
@@ -21,8 +23,8 @@
                         </div>
                     </div>
                 </li>
-
                 <li>
+                  <button id="theme"><img src="https://image.flaticon.com/icons/png/512/3917/3917805.png" width="32" height="32"></button>
                 </li>
                 <li><a id="ln1" class="link-section" href="#intro">Introdução</a></li>
                 <li><a id="ln2" class="link-section" href="#projects">Projetos</a></li>
@@ -194,7 +196,26 @@
                </div>
           </section>
 
-
+          <section id="projects">
+            <h2 class="title-section">Projetos</h2>
+            <div id="carousel">
+              <button id="prev-btn" onclick="prev_btn()">Anterior</button>
+              <div id="project-holder">
+                <div id="img-prt">
+                  <img id="lang-icon" src="./src/icons/android.png">
+                  <img id="prt-icon" src="./src/icons/random-icon-generator.png">
+                </div>
+                <h4 id="title-prt" class="text">Randomizer</h4>
+                <p id="desc" class="text">App de randomização para a plataforma android desenvolvido usando a linguagem java com o android studio.</p>
+              </div>
+              <button id="next-btn" onclick="next_btn()">Próximo</button>
+            </div>
+          </section>
         </div>
     </body>
+    <footer>
+      <div id="end">
+        <div>Icons from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      </div>
+    </footer>
 </html>
