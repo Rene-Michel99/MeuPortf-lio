@@ -167,7 +167,6 @@ body{
 #welcome-text{
   font-family: monospace;
   font-weight: bold;
-  line-height: 0px;
 }
 .title-section{
   font-family: monospace;
@@ -371,7 +370,7 @@ label:hover{
 	flex-direction: column;
 	justify-content: center;
   align-items: center;
-  padding:8px;
+  padding-bottom: 10px;
 }
 .timeline {
   position: relative;
@@ -502,7 +501,6 @@ label:hover{
   #occupation{
     color: rgba(0,0,0,0.7);
     font-family: monospace;
-    line-height: 0px;
     font-size: 22px;
   }
   #lt-intro{
