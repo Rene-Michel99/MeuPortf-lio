@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <link rel="stylesheet" href="./src/css/style.css">
+        <link rel="icon" href="./src/icons/icon-page.png">
+        <title>Meu Portólio</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./src/js/data.js"></script>
+        <script type="text/javascript" src="./src/js/script.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li>
+                    <div class="dropdown">
+                        <button onclick="drop_btn()" class="dropbtn">Dropdown</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#intro">Introdução</a>
+                          <a href="#projects">Projetos</a>
+                          <a href="#formation">Formação</a>
+                          <a href="#skills">Habilidades</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                  <button id="theme"><img src="https://image.flaticon.com/icons/png/512/3917/3917805.png" width="32" height="32"></button>
+                </li>
+                <li><a id="ln1" class="link-section" href="#intro">Introdução</a></li>
+                <li><a id="ln2" class="link-section" href="#projects">Projetos</a></li>
+                <li><a id="ln3" class="link-section" href="#formation">Formação</a></li>
+                <li><a id="ln4" class="link-section" href="#skills">Habilidades</a></li>
+            </ul>
+        </nav>
+        <div class="sections">
+          <section id="welcome-section">
+            <div id="perfil">
+              <div id="badges">
+                <a href="https://github.com/Rene-Michel99">
+                  <img class="github-icon" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">
+                </a>
+                <a href="https://www.linkedin.com/in/ren%C3%AA-michel-santana-padilha-a69394200/">
+                  <img id="linkedin-icon" src="https://image.flaticon.com/icons/png/512/174/174857.png">
+                </a>
+              </div>
+              <img id="perfil-img" src="https://media-exp3.licdn.com/dms/image/C4E03AQGuDi3j2bVHcQ/profile-displayphoto-shrink_800_800/0/1616988301171?e=1629331200&v=beta&t=P0gkzYPNZWT8nmJhPt4rRkYbAtBrIkJ-jIhjYfrOfsc" width="128" height="128">
+            </div>
+            <div id="box-text">
+              <h2 id="welcome-text">Olá, eu sou Renê Michel</h2>
+              <h3 id="occupation">Programador</h3>
+              <p id="lt-intro">Experiência com machine learning, deep learning, backend e frontend.</p>
+              <button id="contact-btn">Contato</button>
+            </div>
+          </section>
+
+          <section id="intro">
+            <h2 class="title-section">Sobre Mim</h2>
+            <img id="about-img" src="https://avatars.githubusercontent.com/u/55860702?s=400&u=6cff84555fc97f7b2e7fead8d542df8d892b9205&v=4">
+            <p class="text">Desde 2018, quando comecei a cursar Engenharia de Software na UFC, estudo e desenvolvo aplicações para pôr o que aprendi em prática e obter experiência a partir disso sempre priorizando otimização, segurança e eficiência de forma mais rápida para cada sistema desenvolvido assim como seguindo os padrões de codificação de cada linguagem. Desde 2020 trabalho com frontend tendo desenvolvidos projetos utilizando javascript e suas funcionalidade extras como ajax, html, css e bootstrap.</p>
+            <div id="data-box">
+              <div class="data">
+                <h3>+3</h3>
+                <p class="text">Anos de experiência</p>
+              </div>
+              <div class="data">
+                <h3>27</h3>
+                <p class="text">Projetos conclídos</p>
+              </div>
+              <div class="data">
+                <h3>6</h3>
+                <p class="text">Meses trabalhando como pesquisador</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="skills">
+            <h2 class="title-section">Habilidades</h2>
+            <div class="sk-content">
+              <div class="area">
+                <label for="toggle-1">
+                  <img class="skills-icon" src="https://image.flaticon.com/icons/png/512/4661/4661245.png">
+                  <h3 class="title-section">Backend</h3>
+                </label>
+                <input id="toggle-1" type="checkbox">
+                <div id="backend">
+                  <div class="field">
+                    <h4 class="title-section">PHP:</h4>
+                    <p class="text">2 projetos</p>
+                  </div>
+                  <div class="field">
+                    <h4 class="title-section">Node.js:</h4>
+                    <p class="text">2 projetos</p>
+                  </div>
+                  <div class="field">
+                    <h4 class="title-section">MongoDB:</h4>
+                    <p class="text">3 projetos</p>
+                  </div>
+                  <div class="field">
+                    <h4 class="title-section">MySQL:</h4>
+                    <p class="text">3 projetos</p>
+                  </div>
+                  <div class="field">
+                    <h4 class="title-section">Python:</h4>
+                    <p class="text">1 projeto</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="area">
+                <label for="toggle-2">
+                  <img class="skills-icon" src="https://image.flaticon.com/icons/png/512/1488/1488592.png">
+                  <h3 class="title-section">Frontend</h3>
+                </label>
+                <input id="toggle-2" type="checkbox">
+                <div id="frontend">
+                  <div class="field">
+                    <h4 class="title-section">HTML:</h4>
+                    <p class="text">5 projetos</p>
+                  </div>
+                  <div class="field">
+                    <h4 class="title-section">CSS:</h4>
+                    <p class="text">5 projetos</p>
+                  </div>
+                  <div class="field">
+                    <h4 class="title-section">JavaScript:</h4>
+                    <p class="text">2 projetos</p>
+                  </div>
+                  <div class="field">
+                    <h4 class="title-section">React:</h4>
+                    <p class="text">1 projeto</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="area">
+                <label for="toggle-3">
+                  <img class="skills-icon" src="https://image.flaticon.com/icons/png/512/3617/3617186.png">
+                  <h3 class="title-section">Machine Learning</h3>
+                </label>
+                <input id="toggle-3" type="checkbox">
+                <div id="ia">
+                  <div class="field">
+                    <h4 class="title-section">Python:</h4>
+                    <p class="text">5 projetos</p>
+                  </div>
+                  <div class="field">
+                    <h4 class="title-section">R:</h4>
+                    <p class="text">2 projetos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="formation">
+            <h2 class="title-section">Qualificação</h2>
+            <div class="timeline">
+              <div class="container_right">
+                <div class="ball-right"></div>
+                <div class="form-content">
+                  <h2>2018</h2>
+                  <p class="text">Matrícula na UFC</p>
+                </div>
+              </div>
+
+               <div class="container_left">
+                 <div class="ball-left"></div>
+                 <div class="form-content">
+                    <h2>2019</h2>
+                    <p class="text">Machine Learning - Udemy</p>
+                  </div>
+                </div>
+
+              <div class="container_right">
+                <div class="ball-right"></div>
+                <div class="form-content">
+                  <h2>2019</h2>
+                  <p class="text">Backend - Udemy</p>
+                </div>
+              </div>
+
+              <div class="container_left">
+                <div class="ball-left"></div>
+                <div class="form-content">
+                   <h2>2020</h2>
+                   <p class="text">Frontend - Udemy</p>
+                 </div>
+               </div>
+
+               <div class="container_right">
+                 <div class="ball-right"></div>
+                 <div class="form-content">
+                   <h2>2021</h2>
+                   <p class="text">Visão Computacional - Coursera</p>
+                 </div>
+               </div>
+          </section>
+
+          <section id="projects">
+            <h2 class="title-section" style="text-align:center;">Projetos</h2>
+            <div id="carousel">
+              <button id="prev-btn" onclick="prev_btn()">Anterior</button>
+              <div id="project-holder">
+                <div id="img-prt">
+                  <img id="lang-icon" src="./src/icons/android.png">
+                  <img id="prt-icon" src="./src/icons/random-icon-generator.png">
+                </div>
+                <h4 id="title-prt" class="text">Randomizer</h4>
+                <p id="desc" class="text">App de randomização para a plataforma android desenvolvido usando a linguagem java com o android studio.</p>
+              </div>
+              <button id="next-btn" onclick="next_btn()">Próximo</button>
+            </div>
+          </section>
+        </div>
+    </body>
+    <footer>
+      <div id="end">
+        <div>Icons from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      </div>
+    </footer>
+</html>

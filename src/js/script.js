@@ -2,6 +2,8 @@ var projects = get_data();
 var pos = 0;
 var is_animating = false;
 
+
+
 function drop_btn() {
     document.getElementById("myDropdown").classList.toggle("show");
   }

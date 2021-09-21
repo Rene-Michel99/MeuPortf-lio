@@ -1,312 +1,35 @@
-body{
-    margin:0px;
-}
-*{
-    scroll-behavior: smooth !important;
-}
-:root {
-  --backg-color: #050a30;
-  --backg-color-sections: white;
-  --backg-color-blue: #0000ff;
+
+html{
+  scroll-behavior: smooth !important;
 }
 
-.navbar{
-    display:flex;
-    flex-direction: row;
-    margin-top:0px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    position: fixed;
-    background-color:#050a30;
-    box-shadow: 2px 2px 2px #03061d;
-    z-index: 10;
-}
-.nav-list{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: start;
-    list-style: none;
-}
-.list{
-	display:flex;
-	justify-content:center;
-}
-#ln1{
-  display: none;
-}
-#ln2{
-  display: none;
-}
-#ln3{
-  display: none;
-}
-#ln4{
-  display: none;
-}
-.link-section{
-    font-family: monospace;
-    text-align: center;
-    font-size:22px;
-    color:rgba(255, 255, 255, 0.623);
-}
-.link-section:hover{
-    color:white;
-}
-#theme{
-  border-radius: 50%;
-  border: 2px solid blue;
-  cursor: pointer;
-}
-#theme:hover{
-  transform: scale(1.1);
+body {
+background: linear-gradient(-45deg, #414141, #000000);
+
 }
 
-/* Dropdown Button */
-.dropbtn {
-    background-color: #000c66;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+
+#box-perf{
+display: flex;
+flex-direction: row;
 }
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #0000ff;
-}
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-    margin-right: 10px;
-}
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 12;
-}
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd
-}
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-    display:block;
+#text-perf{
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: center;
 }
 
-.sections{
-    display:grid;
-    grid-template-rows: auto auto;
-    margin-top:70px;
-}
-#welcome-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
-    background-color: var(--backg-color-section);
-    padding:0px;
-}
-#perfil{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-#badges{
-  display: flex;
-  flex-direction: column;
-  padding: 4px;
-}
-.github-icon{
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-}
-.github-icon:hover{
-  transform: scale(1.2);
-  border: 2px solid blue;
-}
-#linkedin-icon{
-  width: 32px;
-  height: 32px;
-}
-#linkedin-icon:hover{
-  transform: scale(1.2);
-  border: 2px solid blue;
-}
 #perfil-img{
-  border-radius: 50%;
-  width: 128px;
-  height: 128px;
-  border: 20px solid blue;
-  border-bottom-left-radius: 10px;
-  margin-right: 2px;
-}
-#box-text{
-  display: flex;
-  flex-direction: column;
-  padding:0px;
-  text-align: start;
-  letter-spacing: -1px;
-}
-#welcome-text{
-  font-family: monospace;
-  font-weight: bold;
-}
-.title-section{
-  font-family: monospace;
-  font-weight: bold;
-}
-#occupation{
-  color: rgba(0,0,0,0.7);
-  font-family: monospace;
-  line-height: 0px;
-}
-#lt-intro{
-  font-family: monospace;
-  color: rgba(0, 0, 0, 0.7);
-}
-#contact-btn{
-  font-family: monospace;
-  font-size: 16px;
-  border: 0px;
-  border-radius: 5px;
-  width: 125px;
-  height:40px;
-  background-color: rgba(0,0,0,0.15);
-  text-align: center;
-  cursor: pointer;
-}
-#contact-btn:hover{
-  transform: scale(1.1);
-  background-color: blue;
-  color:white;
+border-radius: 50%;
+width: 250px;
+height: 300px;
+border: 20px solid #414141;
+border-bottom-left-radius: 10px;
+margin-right: 2px;
 }
 
 
-#intro{
-    display:flex;
-    flex-direction: column;
-    background-color: var(--backg-color-section);
-    padding:8px;
-    justify-content: center;
-    align-items: center;
-}
-#about-img{
-  border-radius: 5px;
-  width: 250px;
-}
-.text{
-    font-family: monospace;
-    text-align: center;
-}
-#data-box{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.data{
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(0,0,0,0.15);
-  padding:8px;
-  border-radius: 5px;
-  justify-content: center;
-  align-items: center;
-  margin:2px;
-}
-
-
-#skills{
-	display: flex;
-	flex-direction: column;
-	background-color: var(--backg-color-section);
-  justify-content: center;
-  align-items: center;
-}
-.sk-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.area{
-  display: flex;
-  flex-direction: column;
-}
-#toggle-1, #toggle-2, #toggle-3{
-  visibility: hidden;
-}
-label {
-  -webkit-appearance: push-button;
-  -moz-appearance: button;
-  display: flex;
-  flex-direction: row;
-  cursor: pointer;
-  border-bottom: 2px solid rgba(0,0,0,0.1);
-  font-size: 16px;
-}
-label:hover{
-  transform: scale(1.1);
-  color:blue;
-}
-.skills-icon{
-  width: 40px;
-  height: 40px;
-  padding: 2px;
-}
-#backend, #frontend, #ia{
-  display: flex;
-  transition: opacity 1s ease-out;
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#toggle-1:checked ~ #backend{
-  opacity: 1;
-  height: auto;
-}
-#toggle-2:checked ~ #frontend{
-  opacity: 1;
-  height: auto;
-}
-#toggle-3:checked ~ #ia{
-  opacity: 1;
-  height: auto;
-}
-.field{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-#projects{
-    display:grid;
-    background-color: var(--backg-color-sections);
-    padding: 8px;
-    left:0;
-    justify-content: center;
-}
 #carousel{
   display: flex;
   flex-direction: row;
@@ -327,12 +50,12 @@ label:hover{
 }
 #next-btn:hover{
   color: white;
-  background-color: blue;
+  background-color: #414141;
   transform: scale(1.1);
 }
 #prev-btn:hover{
   color: white;
-  background-color: blue;
+  background-color: #414141;
   transform: scale(1.1);
   margin:5px;
 }
@@ -341,11 +64,10 @@ label:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 300px;
+  max-width: 400px;
   height: 350px;
   border-radius: 5px;
-  background-color: rgb(0,0,200);
-  padding: 4px;
+  background-color: #414141;
 }
 #lang-icon{
   width: 32px;
@@ -362,163 +84,17 @@ label:hover{
   height: 64px;
   border-radius: 50%;
 }
-
-
-#formation{
-	display: flex;
-	background-color: var(--backg-color-blue);
-	flex-direction: column;
-	justify-content: center;
+#title-prt{
+  color:white;
+  margin:15px;
+}
+#desc{
+  color: white;
+  margin:15px;
+}
+footer{
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding-bottom: 10px;
-}
-.timeline {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-  height: 100%;
-}
-.ball-right{
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: white;
-  border: 5px solid #00dddd;
-  z-index:2;
-  position: relative;
-  left:102%;
-}
-.ball-left{
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: white;
-  border: 5px solid #00dddd;
-  z-index:2;
-  position: relative;
-  right:1%;
-}
-.container_right{
-  display: flex;
-  flex-direction: row;
-  margin-right: 200px;
-  max-width: 175px;
-
-}
-.container_left{
-  display: flex;
-  flex-direction: row;
-  margin-left: 172px;
-  max-width: 200px;
-}
-.form-content{
-  background-color: white;
-  border-radius: 5px;
-  padding:8px;
-}
-
-
-#end{
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding:12px;
-  background-color: rgba(0,0,0,0.85);
-}
-
-@media(min-width:920px) {
-  .nav-list{
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content:flex-end;
-      align-items:flex-end;
-      list-style: none;
-  }
-  #ln1{
-    display: block;
-    text-decoration: none;
-    margin: 10px;
-  }
-  #ln2{
-    display: block;
-    text-decoration: none;
-    margin: 10px;
-  }
-  #ln3{
-    text-decoration: none;
-    display: block;
-    margin: 10px;
-  }
-  #ln4{
-    text-decoration: none;
-    display: block;
-    margin: 10px;
-  }
-  .dropdown{
-    display: none;
-  }
-  .sk-content{
-    height:350px;
-  }
-  #welcome-section{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height:100vh;
-      background-color: var(--backg-color-section);
-      padding:0px;
-  }
-  #perfil-img{
-    border-radius: 50%;
-    width: 220px;
-    height: 220px;
-    border: 20px solid blue;
-    border-bottom-left-radius: 10px;
-    margin-right: 2px;
-  }
-  #welcome-text{
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 32px;
-  }
-  .title-section{
-    font-family: monospace;
-    font-weight: bold;
-  }
-  #occupation{
-    color: rgba(0,0,0,0.7);
-    font-family: monospace;
-    font-size: 22px;
-  }
-  #lt-intro{
-    font-family: monospace;
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 18px;
-  }
-  #intro .text{
-    width: 50%;
-    font-size: 16px;
-  }
-  .sk-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .sk-content .area{
-    margin: 12px;
-  }
 }
